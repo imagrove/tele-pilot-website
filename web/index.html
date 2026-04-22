@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TelePilot System | 全链路实车远控系统</title>
+    <meta name="description" content="TelePilot System 提供沉浸式实车远控解决方案，涵盖远控驾舱与车载改装套件。实现人机分离、感官同步，适用于影视特技、矿山、扫雷等场景。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0b;
+            color: #e5e7eb;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.15) 0%, rgba(10, 10, 11, 0) 70%);
+        }
+        .card-blur {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .accent-border {
+            border-bottom: 2px solid #2563eb;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 py-6 px-8 flex justify-between items-center card-blur">
+        <div class="text-2xl font-bold tracking-tighter text-white">
+            <span class="text-blue-600">Tele</span>Pilot
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="#features" class="hover:text-blue-500 transition">核心技术</a>
+            <a href="#solutions" class="hover:text-blue-500 transition">解决方案</a>
+            <a href="#docs" class="hover:text-blue-500 transition">技术文档</a>
+        </div>
+        <a href="#cta" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition">获取方案</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 px-8 hero-gradient">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
+                    人机分离，<br>
+                    <span class="text-blue-600">感官同步</span>
+                </h1>
+                <p class="text-lg text-gray-400 mb-8 max-w-lg leading-relaxed">
+                    TelePilot 是全球领先的全链路实车远控系统。通过“沉浸式驾舱”与“车载快装套件”，让操作者在千里之外亦能实时感知真车的物理反馈。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#cta" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-bold text-center transition">立即申请 Demo</a>
+                    <a href="#features" class="border border-gray-700 hover:border-gray-500 px-8 py-4 rounded-lg font-bold text-center transition">了解技术栈</a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
+                    <!-- 引用项目中的图片路径，部署到 Vercel 时需确保相对路径正确 -->
+                    <img src="../docs/images/cockpit.png" alt="Tele-Cockpit" class="w-full h-auto">
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-blue-600 p-6 rounded-xl shadow-xl hidden md:block">
+                    <div class="text-3xl font-bold">100ms</div>
+                    <div class="text-xs uppercase tracking-wider opacity-80">超低延迟链路</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 px-8 bg-[#0d0d0f]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">系统构成</h2>
+                <p class="text-gray-400">端到端的闭环控制架构</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card-blur p-10 rounded-3xl">
+                    <div class="w-12 h-12 bg-blue-600/20 text-blue-500 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-couch text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">沉浸式远控驾舱</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> 6自由度动感底座还原真车 G-Force</li>
+                        <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> 专业铝型材支架与液压反馈外设</li>
+                        <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> 多路高清视角无缝拼接显示</li>
+                    </ul>
+                </div>
+                <div class="card-blur p-10 rounded-3xl">
+                    <div class="w-12 h-12 bg-orange-600/20 text-orange-500 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-car text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">车载改装套件</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><i class="fa-solid fa-check text-orange-600 mr-2"></i> 线控转向/刹车/油门执行机构</li>
+                        <li><i class="fa-solid fa-check text-orange-600 mr-2"></i> IMU 物理数据高频采集单元</li>
+                        <li><i class="fa-solid fa-check text-orange-600 mr-2"></i> 支持 5G/专网的双链路通信箱</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-24 px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 accent-border inline-block pb-2">应用场景</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group cursor-pointer">
+                    <div class="rounded-xl overflow-hidden mb-6 grayscale hover:grayscale-0 transition duration-500">
+                        <img src="../docs/images/real_car.jpg" alt="Stunt Driving" class="w-full h-64 object-cover">
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">影视特技</h4>
+                    <p class="text-gray-400 text-sm">在不危及特技演员生命的情况下，远程完成高难度的撞车与爆炸镜头。</p>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="rounded-xl overflow-hidden mb-6 bg-gray-800 flex items-center justify-center h-64">
+                        <i class="fa-solid fa-helmet-safety text-6xl text-gray-600"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">矿山/高危工业</h4>
+                    <p class="text-gray-400 text-sm">操作员在空调房内控制数公里外的重型矿卡，彻底告别粉尘与危险。</p>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="rounded-xl overflow-hidden mb-6 bg-gray-800 flex items-center justify-center h-64">
+                        <i class="fa-solid fa-land-mine-on text-6xl text-gray-600"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">人道主义扫雷</h4>
+                    <p class="text-gray-400 text-sm">结合物理反馈触觉，让远程排雷更精准、更安全。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-24 px-8 bg-blue-600">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">准备好开启远程驾驶新纪元了吗？</h2>
+            <p class="text-xl mb-12 opacity-90 text-blue-50">留下您的联系方式，我们的技术团队将在 24 小时内为您提供定制方案。</p>
+            <form class="flex flex-col md:row gap-4 max-w-lg mx-auto" onsubmit="alert('感谢关注！您的请求已收到，我们将尽快联系。'); return false;">
+                <input type="email" placeholder="您的工作邮箱" required class="flex-1 px-6 py-4 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white">
+                <button type="submit" class="bg-black hover:bg-gray-900 text-white px-8 py-4 rounded-lg font-bold transition">获取技术规格书</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-8 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto flex flex-col md:row justify-between items-center gap-8">
+            <div class="text-xl font-bold tracking-tighter">
+                <span class="text-blue-600">Tele</span>Pilot
+            </div>
+            <div class="flex space-x-6 text-gray-500">
+                <a href="https://github.com" class="hover:text-white transition"><i class="fa-brands fa-github text-2xl"></i></a>
+                <a href="https://linkedin.com" class="hover:text-white transition"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+                <a href="https://twitter.com" class="hover:text-white transition"><i class="fa-brands fa-twitter text-2xl"></i></a>
+            </div>
+            <div class="text-sm text-gray-500">
+                © 2026 TelePilot System. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Google Analytics Placeholder -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script> -->
+
+</body>
+</html>
