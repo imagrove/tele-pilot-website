@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "public": true,
+  "name": "tele-pilot-system",
+  "cleanUrls": true,
+  "framework": null,
+  "outputDirectory": "web"
+}
